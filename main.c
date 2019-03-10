@@ -6,7 +6,7 @@
 /*   By: ygarrot <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/31 09:25:54 by ygarrot           #+#    #+#             */
-/*   Updated: 2018/02/24 13:00:55 by ygarrot          ###   ########.fr       */
+/*   Updated: 2019/03/07 11:25:22 by ygarrot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int main(int ac, char **av)
 	int ret;
 	while ((ret = get_next_line(fd, &line)) > 0)
 	{
-		printf("%s\n",ret, line);
+		printf("%d %s\n",ret, line);
 		ft_memdel((void**)&line);
 	}
 	return (0);
